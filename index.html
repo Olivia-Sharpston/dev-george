@@ -39,14 +39,30 @@
   </div>
 </nav>
 
+<br></br>
+<h1>🦭Book Log🦭</h1> 
 
-<h1>🦭Olivia's Book Log🦭</h1> 
-<div class="container mt-3"></div>
+<div class="container mt-3" id="modalLogin" style="text-align: center">
     <p>Click on the button to login.</p>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-    LOGIN
+
+
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#myModal" id="logInInitial">
+    Login
   </button>
+
+  <button type="button" hidden class="btn btn-info" id="logOut" data-bs-dismiss="modal">Logout</button>
+        </div>
+
+  <!-- <input type="button" id="logInOut" value="Login" onClick="javascript:change(this);"></input>
+
+  <script>
+    function change(ref) {
+        ref.value="Logout";
+    }
+    </script> -->
+
 </div>
+
 
 <!-- The Modal -->
 <div class="modal" id="myModal">
@@ -62,19 +78,68 @@
         <!-- Modal body -->
         <div class="modal-body">
           <p>Username: </p>
-          <textarea id="w3review" name="w3review" rows="1" cols="20"></textarea>
+          <textarea id="username" name="w3review" rows="1" cols="20"></textarea>
           <p>Password: </p>
           <textarea id="w3review" name="w3review" rows="1" cols="20"></textarea>
         </div>
   
         <!-- Modal footer used to say close, not login -->
         <div class="modal-footer">
-          <button type="button" class="btn" data-bs-dismiss="modal">Login</button>
+          <button type="button" class="btn btn-success" id="logIn" data-bs-dismiss="modal">Login</button>
         </div>
-  
+
       </div>
     </div>
   </div>
+
+  <br></br>
+  <h5>This is a log to be able to keep track of the books that I have read thus far in 2025. Furthermore, it will include some books I am wanting to read in 2025. </h5>
+<br>
+
+<label for="fname">
+  <h3>Log a Book:</h3>
+</label><br>
+<input type="text" id="bookLogged" placeholder="Enter in a Book">
+
+<button id="saveBook" class="saveBookButton">Save Book</button>
+<br><br>
+
+<h3>Got any predictions or thoughts about any books?</h3>
+<textarea id="pageNum" rows="4" cols="40">
+</textarea><br>
+<button id="saveThought" class="saveThoughtButton">Save Thought</button>
+<br><br>
+
+<h3>Reading Log of 2025</h3>
+
+<button id="editBook" class="savedBookButton">Edit Saved Book</button>
+<br><br>
+
+<h3>Reading Start Dates</h3>
+<input id="dateStarted" type="date"><br>
+<button id="editStartDate" class="startDateButton">Edit Start Date</button>
+<br><br>
+
+<h3>Reading End Dates</h3>
+<input id="dateEnded" type="date"><br>
+<button id="editEndDate" class="endDateButton">Edit End Date</button>
+<br><br>
+
+<label for="fname">
+  <h3>TBR List:</h3>
+</label><br>
+<input type="text" id="tbrBook" placeholder="Enter Book into TBR">
+
+<button id="toBeReadBook" class="toBeReadButton">Save Book</button>
+
+<ul>
+  <li>Fourth Wing Series by <a href="https://rebeccayarros.com/" target="_blank">Rebecca Yarros</a></li>
+
+  <li>Hooked Series by <a href="https://www.emilymcintire.com/" target="_blank">Emily McIntire</a></li>
+
+  <li>Once Upon A Broken Heart Series by <a href="https://www.goodreads.com/author/show/14137787.Stephanie_Garber" target="_blank">Stephanie Garber</a></li>
+</ul>
+<br><br>
 
 
 <footer class="py-3 my-4">
