@@ -44,53 +44,35 @@
 
 <div class="container mt-3" id="modalLogin" style="text-align: center">
     <p>Click on the button to login.</p>
-
-
-    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#myModal" id="logInInitial">
-    Login
-  </button>
-
-  <button type="button" hidden class="btn btn-info" id="logOut" data-bs-dismiss="modal">Logout</button>
-        </div>
-
-  <!-- <input type="button" id="logInOut" value="Login" onClick="javascript:change(this);"></input>
-
-  <script>
-    function change(ref) {
-        ref.value="Logout";
-    }
-    </script> -->
-
+  </div>
+<div class="container mt-3" id="modalLogin" style="text-align: center">
+  <button class="btn btn-info" id="loginBtn" >Login</button>
 </div>
 
-
-<!-- The Modal -->
-<div class="modal" id="myModal">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Login into Book Log</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-          <p>Username: </p>
-          <textarea id="username" name="w3review" rows="1" cols="20"></textarea>
-          <p>Password: </p>
-          <textarea id="w3review" name="w3review" rows="1" cols="20"></textarea>
-        </div>
-  
-        <!-- Modal footer used to say close, not login -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-success" id="logIn" data-bs-dismiss="modal">Login</button>
-        </div>
-
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
     </div>
   </div>
+</div>
 
   <br></br>
   <h5>This is a log to be able to keep track of the books that I have read thus far in 2025. Furthermore, it will include some books I am wanting to read in 2025. </h5>
@@ -133,8 +115,11 @@
 <button id="toBeReadBook" class="toBeReadButton">Save Book</button>
 
 
-<!-- json add in below -->
+<br></br>
+<div id="bookData"></div>
 <script src="scripts/readBookData.js"></script>
+<ul id="dataSpot" class="list-group"></ul>
+
 <!-- <ul>
   <li>Fourth Wing Series by <a href="https://rebeccayarros.com/" target="_blank">Rebecca Yarros</a></li>
 

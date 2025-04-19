@@ -14,14 +14,29 @@ $(document).ready(function () {
       return "Not Ready, Sorry!";
     }
 
-    let name = "";
-    if(username){
-        name = username;
-        //(text) = Welcome, ${name};
-        // text: welcome username
-        $("logIn").hide();
-        $("logOut").show();
-    }
+    document.getElementById("loginBtn").addEventListener("click", () => {
+      const modal = new bootstrap.Modal(document.getElementById("loginModal"));
+      modal.show();
+    });
+    
+    document.getElementById("loginForm").addEventListener("submit", (e) => {
+      e.preventDefault(); // Prevent page reload
+      const name = document.getElementById("name").value;
+    
+      // Update navbar
+      document.querySelector(".navbar-brand").textContent = `Welcome, ${name}`;
+      document.getElementById("loginBtn").textContent = "Logout";
+    
+      // Close the modal
+      const modal = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
+      modal.hide();
+    
+      // Add logout functionality
+      document.getElementById("loginBtn").addEventListener("click", () => {
+        location.reload();
+      });
+    });
+    
   });
   
   
