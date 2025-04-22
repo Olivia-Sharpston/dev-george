@@ -21,11 +21,13 @@
 
 
 #### Here is a snip of code from this project that I think is interesting. 
-```javascript
-document.querySelector(".navbar-brand").textContent = `Welcome, ${name}`;
-document.getElementById("loginBtn").textContent = "Logout";
-```
-#### Whenever the user logs in, their logo in the navigational bar is changed to "Welcome, " and the username entered in the login screen. The document.querySelector() method returns the first element that matches a CSS selector. In the parethesis is the CSS selector; therefore, it would be ".navbar-brand" in the above code. Additionally, this changes the login button to say "Logout." The textContent property sets or returns the text content of the specified node, and all its descendants. The .textContent simply changes the word in loginBtn to be "Logout" versus the original "Login."
+https://github.com/Olivia-Sharpston/dev-george/blob/4e309c17b91c12ed9be0ed729c03a61aacd820b1/scripts/script.js#L27-L28
+#### Whenever the user logs in, their logo in the navigational bar is changed to "Welcome, " and the username entered in the login screen. The document.querySelector() method, which is line 27, returns the first element that matches a CSS selector. In the parethesis is the CSS selector; therefore, it would be ".navbar-brand" in the above code. Additionally, this changes the login button to say "Logout." The .textContent property, which is line 28, sets or returns the text content of the specified node, and all its descendants. The .textContent simply changes the word in loginBtn to be "Logout" versus the original "Login."
+
+<br></br>
+
+### This is a Github Issue that refers to future ideas for the Book Logging App. 
+<a href="https://github.com/Olivia-Sharpston/dev-george/issues/1" target="_blank">Future Ideas!</a>
 
 <br></br>
 
