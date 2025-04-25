@@ -46,3 +46,5 @@ Change Login Buttone Color Reference: https://getbootstrap.com/docs/4.0/componen
 Form Reference: https://www.w3schools.com/html/html_forms.asp
 <br></br>
 Event Listener Reference: https://www.w3schools.com/jsref/met_element_addeventlistener.asp
+<br></br>
+JSON Stringify Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
