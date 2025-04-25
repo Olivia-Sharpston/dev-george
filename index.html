@@ -87,10 +87,24 @@
 <br><br>
 
 <h3>Got any predictions or thoughts about any books?</h3>
-<textarea id="pageNum" rows="4" cols="40">
-</textarea><br>
-<button id="saveThought" class="saveThoughtButton">Save Thought</button>
-<br><br>
+<!-- new form -->
+<form id="dataForm">
+  <label for="dataInput">Enter Prediction:</label>
+  <input type="text" id="dataInput" required>
+  <button type="submit" class="saveThoughtButton">Save Thought</button>
+</form>
+
+<div id="deleteModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <p>Are you sure you want to delete this item?</p>
+    <button id="confirmDelete">Yes</button>
+    <button id="cancelDelete">No</button>
+  </div>
+</div>
+
+<button id="sampleDataBtn">Sample Thought</button>
+<ul id="dataList"></ul>
+<!-- end of new form -->
 
 <h3>Reading Log of 2025</h3>
 
