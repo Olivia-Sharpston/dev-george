@@ -44,3 +44,5 @@ Change Login Buttone Color Reference: https://getbootstrap.com/docs/4.0/componen
 .textContent Reference:https://www.w3schools.com/jsref/prop_node_textcontent.asp
 <br></br>
 Form Reference: https://www.w3schools.com/html/html_forms.asp
+<br></br>
+Event Listener Reference: https://www.w3schools.com/jsref/met_element_addeventlistener.asp
