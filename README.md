@@ -26,8 +26,8 @@ https://github.com/Olivia-Sharpston/dev-george/blob/4e309c17b91c12ed9be0ed729c03
 
 <br></br>
 
-### This is a Github Issue that refers to future ideas for the Book Logging App. 
-<a href="https://github.com/Olivia-Sharpston/dev-george/issues/1" target="_blank">Future Ideas!</a>
+### This is a Github Issue that refers to future <a href="https://github.com/Olivia-Sharpston/dev-george/issues/1" target="_blank">Future Ideas!</a> for the Book Logging App. 
+
 # makke the markdown list
 
 <br></br>
