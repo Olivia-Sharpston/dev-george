@@ -42,3 +42,5 @@ Change Login Buttone Color Reference: https://getbootstrap.com/docs/4.0/componen
 .querySelector Reference: https://www.w3schools.com/Jsref/met_document_queryselector.asp
 <br></br>
 .textContent Reference:https://www.w3schools.com/jsref/prop_node_textcontent.asp
+<br></br>
+Form Reference: https://www.w3schools.com/html/html_forms.asp
