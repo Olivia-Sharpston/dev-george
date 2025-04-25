@@ -46,12 +46,13 @@ $(document).ready(function () {
 // stuff we changing right now
 
 let frontEndData = [];
-let itemToDelete = null; 
+let itemToDelete = null;
 
 const form = document.getElementById('dataForm');
 const dataInput = document.getElementById('dataInput');
 const dataList = document.getElementById('dataList');
 const sampleDataBtn = document.getElementById('sampleDataBtn');
+const exportDataBtn = document.getElementById('exportDataBtn');
 const deleteModal = document.getElementById('deleteModal');
 const confirmDeleteBtn = document.getElementById('confirmDelete');
 const cancelDeleteBtn = document.getElementById('cancelDelete');
@@ -71,7 +72,6 @@ function displayData() {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-
   const newData = dataInput.value;
   if (newData) {
     frontEndData.push(newData);
@@ -82,7 +82,6 @@ form.addEventListener('submit', (event) => {
 
 dataList.addEventListener('click', (event) => {
   const index = event.target.dataset.index;
-
   if (event.target.classList.contains('edit-btn')) {
     const listItem = event.target.parentElement;
     listItem.innerHTML = `
@@ -90,18 +89,14 @@ dataList.addEventListener('click', (event) => {
       <button class="save-btn" data-index="${index}">Save</button>
     `;
   }
-
   if (event.target.classList.contains('save-btn')) {
     const listItem = event.target.parentElement;
     const newValue = listItem.querySelector('.edit-input').value;
-
     if (newValue) {
       frontEndData[index] = newValue;
       displayData();
     }
   }
-
-
   if (event.target.classList.contains('delete-btn')) {
     itemToDelete = index;
     deleteModal.style.display = "block";
@@ -111,7 +106,7 @@ dataList.addEventListener('click', (event) => {
 confirmDeleteBtn.addEventListener('click', () => {
   if (itemToDelete !== null) {
     frontEndData.splice(itemToDelete, 1);
-    displayData(); 
+    displayData();
     itemToDelete = null;
     deleteModal.style.display = "none";
   }
@@ -126,6 +121,11 @@ sampleDataBtn.addEventListener('click', () => {
   const sampleData = "Sample Data";
   dataInput.value = sampleData;
 });
+
+exportDataBtn.addEventListener('click', () => {
+  console.log(JSON.stringify(frontEndData));
+});
+
 
   });
   
