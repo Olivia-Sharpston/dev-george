@@ -80,3 +80,7 @@ a:active {
   background-color: transparent;
 }
 
+.custom-link {
+  color: grey !important;
+  text-decoration: none;
+}

@@ -21,12 +21,6 @@
       <ul class="navbar-nav">
         <li class="nav-item">
             <a class="navbar-link px-2 custom-link" aria-current="page" href="images/devAbleWireframe.jpg" target="blank">Wireframe</a>
-            <style>
-              .custom-link {
-                color: grey !important;
-                text-decoration: none;
-              }
-              </style>
         </li>
         <li class="nav-item">
             <a href="https://github.com/Olivia-Sharpston" target="blank" class="nav-link px-2">Github Profile</a>
@@ -45,10 +39,10 @@
   </div>
 </nav>
 
-<br></br>
+<br>
 <h1>🦭Book Log🦭</h1> 
 
-<div class="container mt-3" id="modalLogin" style="text-align: center">
+<div class="container mt-3" id="modalLoginFirst" style="text-align: center">
     <p>Click on the button to login.</p>
   </div>
 <div class="container mt-3" id="modalLogin" style="text-align: center">
@@ -80,13 +74,11 @@
   </div>
 </div>
 
-  <br></br>
+  <br>
   <h5>This is a log to be able to keep track of the books that I have read thus far in 2025. Furthermore, it will include some books I am wanting to read in 2025. </h5>
 <br>
 
-<label for="fname">
-  <h3>Log a Book:</h3>
-</label><br>
+<h3>Log a Book:</h3>
 <label for="bookLogged">Log Here:</label>
 <input type="text" id="bookLogged" placeholder="Enter in a Book">
 
@@ -94,7 +86,6 @@
 <br><br>
 
 <h3>Got any predictions or thoughts about any books?</h3>
-<!-- new form -->
 <form id="dataForm">
   <label for="dataInput">Enter Prediction:</label>
   <input type="text" id="dataInput" required>
@@ -112,7 +103,6 @@
 <button id="sampleDataBtn">Sample Thought</button>
 <button id="exportDataBtn">Export Thoughts</button>
 <ul id="dataList"></ul>
-<!-- end of new form -->
 
 <h3>Reading Log of 2025</h3>
 
@@ -131,9 +121,7 @@
 <button id="editEndDate" class="endDateButton">Edit End Date</button>
 <br><br>
 
-<label for="fname">
-  <h3>TBR List:</h3>
-</label><br>
+<h3>TBR List:</h3>
 <label for="tbrBook">Log TBR: </label>
 <input type="text" id="tbrBook" placeholder="Enter Book into TBR">
 
